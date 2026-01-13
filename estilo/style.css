@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --cor01: black;
+    --cor02: white;
+
+    --fonte-poema: "Sriracha", cursive;
+    --fonte-destaque: 'Passion one', sans-serif;
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: var(--cor01);
+    min-height: 120px;
+    text-align: center;
+    padding-top: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+
+header > h1 {
+    color: var(--cor02);
+    font-size: 10vw;
+    font-family: var(--fonte-destaque);
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    color: var(--cor02);
+    font-size: 16px;
+    font-family: var(--fonte-padrao);
+    padding-bottom: 40px;
+}
+
+p > a {
+    color: var(--cor02);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#fundo-normal {
+    padding: 175px 0px 227px 30px;
+    line-height: 2em;
+    font-family: var(--fonte-poema);
+    font-size: 5vw;
+}
+
+#fundo-img1 {
+    background: url(../imagens/background001.jpg) center right no-repeat fixed;
+    background-size: cover;
+    padding: 175px 0px 227px 30px;
+    font-family: var(--fonte-poema);
+    font-size: 5vw;
+    line-height: 2em;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);   
+}
+
+#fundo-img2 {
+    background: url(../imagens/background002.jpg) center left no-repeat fixed;
+    background-size: cover;
+    padding: 175px 0px 227px 30px;
+    font-family: var(--fonte-poema);
+    font-size: 5vw;
+    line-height: 2em;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+}
+
+section#fundo-img1 > p {
+    color: var(--cor02);
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+    display: inline-block;
+}
+
+section#fundo-img2 > p {
+    color: var(--cor02);
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+    display: inline-block;
+}
+
+footer {
+    background-color: black;
+    padding: 10px 10px 10px 10px;
+    color: var(--cor02);
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    font-size: 1.7vw;
+}
